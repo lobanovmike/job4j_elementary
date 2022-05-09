@@ -21,9 +21,9 @@ public class MatrixCheckTest {
         char[][] input = {
                 {' ', ' ', ' '},
                 {' ', ' ', ' '},
-                {'X', 'X', 'X'},
+                {'X', ' ', 'X'},
         };
-        int row = 1;
+        int row = 2;
         boolean result = MatrixCheck.monoHorizontal(input, row);
         Assert.assertFalse(result);
     }
