@@ -40,4 +40,13 @@ public class PointTest {
         double out = point1.distance(point2);
         Assert.assertEquals(expected, out, 0.01);
     }
+
+    @Test
+    public void when000to111then1dot73() {
+        double excepted = 1.73;
+        Point point1 = new Point(0, 0, 0);
+        Point point2 = new Point(1, 1, 1);
+        double result = point1.distance3d(point2);
+        Assert.assertEquals(excepted, result, 0.01);
+    }
 }
